@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3572ff8042.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo" width="20" height="50" alignment="left">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+               <!-------- <li><a href="#services">Services</a></li>------->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Web Developer, Graphic Designer</p>
+            <h1>Hi, I'm <span>Anjana </span> Anil </h1>
+        </div>
+    </div>
+</div>
+<!----------About--------- -->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>               
+            &nbsp;
+                <p> I'm a B.Tech graduate in Computer Science and Engineering from India. I am a learning enthusiast who love coding and designing. Here I will showcase my projects, passion and 
+                    interests. I believe hardwork and smartwork bring success.
+            
+                      
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Web app Development</li>
+                            <li><span>Designer</span><br>Graphic Designer</li>
+                            <li><span>Developer</span><br>Python Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Aug 2022 - Jun 2023</span><br>Creative Lead at GDSC Toc H.</li>
+                            <li><span>Jul 2022 - Oct 2022</span><br>Python Mentor(Beginner Level) at Cod(h)er by WIT TinkerHub.</li>
+                            <li><span>Jan 2022 - May 2022</span><br>Graphic Design Intern at Aashman Foundation.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>B.Tech in Computer Science and Engineering from Toc H Institute of Science and Technology.</li>
+                            <li><span>2017 - 2019</span><br>Higher Secondary Education from G H S S Kadayiruppu.</li>
+                            <li><span>2017</span><br>High School Education from Stella Maris Convent School.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------services---------------------->
+<!------<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Loreumipsum hzifewtwghv ffgheurhghvd fdnghgeg
+                    rjeuteljoiudgeh erljgejegf,md jgiejihjpgitpy
+                    jigreiojeoige riuoiyiighiregnijhry
+                    iertijyietjphyirteyiprtjgpodihgrtp[9pduip35erek]
+                    uf8dytgeratuawut.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Loreumipsum hzifewtwghv ffgheurhghvd fdnghgeg
+                    rjeuteljoiudgeh erljgejegf,md jgiejihjpgitpy
+                    jigreiojeoige riuoiyiighiregnijhry
+                    iertijyietjphyirteyiprtjgpodihgrtp[9pduip35erek]
+                    uf8dytgeratuawut.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen"></i>
+                <h2>Graphic Design</h2>
+                <p>Loreumipsum hzifewtwghv ffgheurhghvd fdnghgeg
+                    rjeuteljoiudgeh erljgejegf,md jgiejihjpgitpy
+                    jigreiojeoige riuoiyiighiregnijhry
+                    iertijyietjphyirteyiprtjgpodihgrtp[9pduip35erek]
+                    uf8dytgeratuawut.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>----->
+<!-----------------------portfolio------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpeg">
+                <div class="layer">
+                   <h3>Desktop Notifier</h3> 
+                   <p>A simple Deskop Notifier using python. It shows the updated number of covid cases across the world.
+                   </p>
+                   <a href="https://github.com/anjanaanil4556/DesktopNotifier-Shehacks"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpeg">
+                <div class="layer">
+                    <h3>Personal Assistant</h3> 
+                    <p>Here is my interactive personal assistant named as 'LAVY' coded using python. 
+                    </p>
+                    <a href="https://github.com/anjanaanil4556/LAVYAssistant.io"><i class="fa-solid fa-up-right-from-square"></i></a>
+                 </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Driver Behaviour Analysis</h3> 
+                    <p>Driver Behaviour Analysis using Deep Learning Architecture. This is my B.Tech final year project. 
+                    </p>
+                    <a href="https://github.com/anjanaanil4556/Driver-Behaviour-Analysis"><i class="fa-solid fa-up-right-from-square"></i></a>
+                 </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.jpg">
+                <div class="layer">
+                    <h3>Driver's Health Monitoring System</h3> 
+                    <p>Real time driver's health monitoring system with the help of camera and sensors. 
+                    </p>
+                    <a href="https://github.com/anjanaanil4556/Driver-s-Health-Monitoring-System"><i class="fa-solid fa-up-right-from-square"></i></a>
+                 </div>
+            </div>
+     </div>
+        <!----<a href="#" class="btn">See more</a>---->
+    </div>
+</div>&nbsp;
+&nbsp;
+
+<!-------------------contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> anjanaanil1105@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 8590245495</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100075623123001"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/_oopz__itsme_?igshid=QGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/anjana-anil-374795191"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/qr/BG5TZTD57MUVH1"><i class="fa-brands fa-whatsapp"></i></a>
+               </div>
+                <a href="images/resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2 ">Submit</button>
+            </form>
+            <span id="msg"></span>
+    
+        </div>    
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Anjana <i class="fa-solid fa-heart"></i>.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz7b6b0AmWHr6kIizx9cU6Ka7azNAfSN1mKlZkAetYxv0Uq1OkW0ius4FUvGBXgb6Yq/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
